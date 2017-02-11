@@ -31,17 +31,17 @@
 	</head>
 	<body>
 		<div class="reveal">
-			<div class="slides" data-skip-types="online" data-remove-aside>
+			<div class="slides" data-skip-types="live" data-remove-aside>
         <!-- Title & About //-->
 				<section>
           <section>
             <h1>The Flexibility of Drupal 8</h1>
-            <p data-skip="print,online"><a href="//www.nyccamp.org/session/flexibility-drupal-8" target="_blank">nyccamp.org/node/1279</a></p>
-            <h3 data-skip="print,online">NYCCamp 2016</h3>
+            <h3 data-skip="print,online">DCN Lights 2017</h3>
           </section>
           <section data-transition="convex">
             <h2>Mike Miles</h2>
             <p>Genuine (<a href="//wearegenuine.com" target="_blank">wearegenuine.com</a>)</p>
+            <p>Dev(up); podcast (<a href="//developingup.com" target="_blank">developingup.com</a>)</p>
             <p>All the internet places: <a href="//twitter.com/mikemiles86" target="_blank">mikemiles86</a></p>
             <aside class="notes">
               <ul>
@@ -120,21 +120,29 @@ easily and modularly."
         </section>
         <section>
           <section>
-            <h2>The Demo</h2>
+            <h2>Along comes the client...</h2>
+            <blockquote class="fragment">
+              "Hey could you change the menu things on the homepage?"
+            </blockquote>
+            <!--
             <ul>
               <li>Drupal 8.1.3</li>
               <li>Standard Install Profile</li>
               <li>Change menu tabs using 8 different methods</li>
             </ul>
+            //-->
           </section>
           <section data-transition="convex" data-skip="print,online" data-background-image="images/before.png" data-background-position="top left">
-            <h3 class="overlay-text">The Before</h3>
+            <!--
+            <h3 class="overlay-text">The "homepage"</h3>
+            //-->
           </section>
           <section data-transition="convex" data-skip="live">
-            <h3>The Before</h3>
+            <h3>The "Homepage"</h3>
             <img data-src="images/before.png" alt="Plain Drupal 8 site before manipulations" />
             <p class="caption">A plain Drupal 8 install with menu menu links before altering.</p>
           </section>
+          <!--
           <section data-transition="convex" data-skip="print,online" data-background-image="images/after.png" data-background-position="top left">
             <h3 class="overlay-text">The After</h3>
           </section>
@@ -143,6 +151,7 @@ easily and modularly."
             <img data-src="images/after.png" alt="Drupal 8 with menu after manipulations." />
             <p class="caption">Drupal 8 main menu after altering 8 different ways.</p>
           </section>
+          //-->
         </section>
         <section>
           <section data-transition="convex" data-background-image="images/buttons-to-push.jpg" data-credit="http://www.publicdomainpictures.net/view-image.php?image=91272&picture=buttons-to-push">
@@ -150,6 +159,7 @@ easily and modularly."
               <h2>#1 Drupal Core</h2>
             </div>
           </section>
+          <!--
           <section data-transition="convex">
             <h3>The "Clicking Buttons" method</h3>
             <ul>
@@ -165,6 +175,7 @@ easily and modularly."
               </ul>
             </aside>
           </section>
+          //-->
           <section data-transition="convex">
             <img data-skip="print" data-src="images/1_core.gif" alt="Using Drupal core to edit a main menu link" />
             <img data-skip="present" data-src="images/1_core.png" alt="Using Drupal core to edit a main menu link" />
@@ -183,6 +194,7 @@ easily and modularly."
               <h2>#2 Modules</h2>
             </div>
           </section>
+          <!--
           <section data-transition="convex">
             <h3>The extend core method</h3>
             <ul>
@@ -198,7 +210,7 @@ easily and modularly."
               </ul>
             </aside>
           </section>
-
+          //-->
           <section data-transition="convex">
             <img data-src="images/2_modules_1_module.png" alt="Look on drupal.org for modules that meet your needs" />
             <p class="caption">Look for modules on Drupal.org to see if there is one that meets your needs. Found the Menu Links Attributes module for Drupal 8.</p>
@@ -256,6 +268,7 @@ _core:
               <h2>#3 Twig Templates</h2>
             </div>
           </section>
+          <!--
           <section data-transition="convex">
             <h3>The alter markup method</h3>
             <ul>
@@ -271,6 +284,7 @@ _core:
               </ul>
             </aside>
           </section>
+          //-->
           <section data-transition="convex">
             <img data-src="images/3_twig_1_inspect.png" alt="Use debug tools to learn which templates to alter." />
             <p class="caption">Can use Twig debug to learn which template the main menu uses.</p>
@@ -321,6 +335,7 @@ _core:
             </code><span class="codename">flex_theme/templates/menu--main.html.twig</span></pre>
             <p class="caption">Add logic to twig template (lines 7-12) to check title of current link and alter the styling.</p>
           </section>
+          <!--
           <section data-transition="convex">
             <img data-skip="print" data-src="images/3_twig_3_enable_theme.gif" alt="Enable the new theme and set as default." />
             <img data-skip="present" data-src="images/3_twig_3_enable_theme.png" alt="Enable the new theme and set as default." />
@@ -328,6 +343,7 @@ _core:
               Enabling the new theme as default so that Drupal will use the custom twig template for output.
             </p>
           </section>
+          //-->
           <section data-transition="convex" data-skip="print,online" data-background-image="images/3_twig_result.png">
           </section>
           <section data-transition="convex" data-skip="live">
@@ -341,6 +357,7 @@ _core:
               <h2>#4 CSS</h2>
             </div>
           </section>
+          <!--
           <section data-transition="convex">
             <h3>The alter display method</h3>
             <ul>
@@ -356,6 +373,7 @@ _core:
               </ul>
             </aside>
           </section>
+          //-->
           <section data-transition="convex">
             <img data-src="images/4_css_1_files.png" alt="Using a custom theme for styling" />
             <p class="caption">Will add some custom styling to existing custom theme (flex_theme)</p>
@@ -406,6 +424,7 @@ libraries:
               <h2>#5 JavaScript</h2>
             </div>
           </section>
+          <!--
           <section data-transition="convex">
             <h3>The DOM manipulation method</h3>
             <ul>
@@ -421,6 +440,7 @@ libraries:
               </ul>
             </aside>
           </section>
+          //-->
           <section data-transition="convex">
             <img data-src="images/5_javascript_1_files.png" />
             <p class="caption">Will add new JavaScript and CSS to custom theme to alter data using custom JavaScript.</p>
@@ -506,6 +526,7 @@ menu-alter-main:
               <h2>#6 Hooks</h2>
             </div>
           </section>
+          <!--
           <section data-transition="convex">
             <h3>The alter data method</h3>
             <ul>
@@ -521,6 +542,7 @@ menu-alter-main:
               </ul>
             </asidE>
           </section>
+          //-->
           <section data-transition="convex">
             <img data-src="images/6_hooks_1_inspect.png" alt="Using Twig debug to learn which hooks affect the menu" />
             <p class="caption">Can use Twig debug to learn naming convention for hooks</p>
@@ -586,6 +608,7 @@ function flex_module_preprocess_menu__main(&$variables) {
               <h2>#7 Services</h2>
             </div>
           </section>
+          <!--
           <section data-transition="convex">
             <h3>The replace core method</h3>
             <ul>
@@ -601,6 +624,7 @@ function flex_module_preprocess_menu__main(&$variables) {
               </ul>
             </aside>
           </section>
+          //-->
           <section data-transition="convex">
             <img data-src="images/7_services_1_files.png" alt="PHP files adding to custom module." />
             <p class="caption">Using a custom service requires some PHP classes within a custom module.</p>
@@ -665,6 +689,7 @@ class FlexModuleMenuLinkTree extends MenuLinkTree {
               <h2>#8 Combinations</h2>
             </div>
           </section>
+          <!--
           <section data-transition="convex">
             <h3>The real world method</h3>
             <ul>
@@ -680,6 +705,7 @@ class FlexModuleMenuLinkTree extends MenuLinkTree {
               </ul>
             </aside>
           </section>
+          //-->
           <section data-transition="convex">
             <pre><code class="php line-numbers" data-trim data-highlight-lines="12-14">
               namespace Drupal\flex_module;
@@ -828,10 +854,24 @@ _core:
         </section>
         <section>
           <section>
+            <h2>Along comes the client...</h2>
+            <blockquote>
+              "Hey could you change the menu things on the homepage?"
+            </blockquote>
+            <p class="fragment">Yes I can<br /><span class="fragment">...but I need more details</span></p>
+            <!--
+            <ul>
+              <li>Drupal 8.1.3</li>
+              <li>Standard Install Profile</li>
+              <li>Change menu tabs using 8 different methods</li>
+            </ul>
+            //-->
+          </section>
+          <section>
             <h2>What did we Learn?</h2>
             <ul>
-              <li class="fragment">Drupal is flexible!</li>
-              <li class="fragment">No "right" way, just "right for me" way</li>
+              <li class="fragment">Drupal can do "that"</li>
+              <li class="fragment">No "right way", just "right for me way"</li>
             </ul>
           </section>
         </section>
@@ -839,22 +879,22 @@ _core:
         <section>
           <section>
             <h2>Resources</h2>
-            <a href="//bit.ly/NYC16Flex" target="_blank">bit.ly/NYC16Flex</a>
+            <a href="//bit.ly/DCN17Flex" target="_blank">bit.ly/DCN17Flex</a>
             <p class="filename">This presentation</p>
             <br />
-            <a href="//bit.ly/NYC16FlexSlides" target="_blank">bit.ly/NYC16FlexSlides</a>
+            <a href="//bit.ly/DCN17FlexSlides" target="_blank">bit.ly/DCN17FlexSlides</a>
             <p class="filename">Annotated Slides</p>
             <br />
-            <a href="//bit.ly/NYC16FlexCode" target="_blank">bit.ly/NYC16FlexCode</a>
+            <a href="//bit.ly/DCN17FlexCode" target="_blank">bit.ly/DCN17FlexCode</a>
             <p class="filename">Demo code (theme and module)</p>
             <br />
-            <a href="//mike-miles.com" target="_blank" alt="Mike Miles Blog">mike-miles.com</a>
-            <p class="filename">My blog</p>
+            <a href="//developingup.com" target="_blank" alt="Mike Miles Blog">developingup.com</a>
+            <p class="filename">My podcast</p>
           </section>
           <section data-transition="convex">
             <h1>Feedback</h1>
             <h3><a href="http://www.twitter.com/mikemiles86">@mikemiles86</a></h3>
-            <h3 data-set-aside data-skip="print,online">#NYCCamp</h3>
+            <h3 data-set-aside data-skip="print,online">#DCNLights</h3>
           </section>
         </section>
         <section>
@@ -865,7 +905,7 @@ _core:
       <div class="footer" data-skip="print,online">
         <span class="footer-conference">
           <img src="images/conf_logo.png" class="footer-logo conference-logo" />
-          #NYCCamp
+          #dcnlights
         </span>
         <span class="footer-company">
           <img src="images/company_logo.png" class="footer-logo company-logo" />
