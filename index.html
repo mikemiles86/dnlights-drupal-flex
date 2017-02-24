@@ -31,7 +31,7 @@
 	</head>
 	<body>
 		<div class="reveal">
-			<div class="slides" data-skip-types="live" data-captions-aside>
+			<div class="slides" data-skip-types="live" data-remove-aside>
         <!-- Title & About //-->
 				<section>
           <section>
@@ -94,6 +94,11 @@ easily and modularly."
             </aside>
           </section>
           <section data-transition="convex">
+            <img data-src="images/Drupal_Brain.png" alt="The brain of a Drupalist" style="border:0;background:none;box-shadow:0 0 0 0;margin:0;width:75%" />
+            <a href="//bit.ly/DrupalBrain" target="_blank">bit.ly/DrupalBrain</a>
+            <p class="caption">The brain of a Drupalist is split into many skillsets, which can all be leveraged.</p>
+          </section>
+          <section data-transition="convex">
             <h3>Why Flexiblity is Important</h3>
             <ul>
               <li class="fragment">Make Drupal do what you want</li>
@@ -146,11 +151,6 @@ easily and modularly."
             <p class="caption">Drupal 8 main menu after altering 8 different ways.</p>
           </section>
           //-->
-          <section data-transition="convex">
-            <img data-src="images/Drupal_Brain.png" alt="The brain of a Drupalist" style="border:0;background:none;box-shadow:0 0 0 0;margin:0;width:75%" />
-            <a href="//bit.ly/DrupalBrain" target="_blank">bit.ly/DrupalBrain</a>
-            <p class="caption">The brain of a Drupalist is split into many skillsets, which can all be leveraged.</p>
-          </section>
            <section data-transition="convex">
             <h3>Focus of this Session</h3>
             <ul>
@@ -690,6 +690,7 @@ class FlexModuleMenuLinkTree extends MenuLinkTree {
             <p class="caption">Drupal now uses custom menu link tree service to render menu links. Custom logic thus casues the "Services" menu tab to be altered.</p>
           </section>
         </section>
+        <!--
         <section>
           <section data-background-image="images/planet.gif" data-credit="http://gifsoup.com/view/4515088/captain-planet-powers-combined.html" data-background-position="middle">
             <div class="overlay-text">
@@ -713,6 +714,7 @@ class FlexModuleMenuLinkTree extends MenuLinkTree {
             </aside>
           </section>
           //-->
+          <!--
           <section data-transition="convex">
             <pre><code class="php line-numbers" data-trim data-highlight-lines="12-14">
               namespace Drupal\flex_module;
@@ -859,6 +861,7 @@ _core:
             <p class="caption">Result of using multiple manipulations methods, the last menu item is greatly altered.</p>
           </section>
         </section>
+        //-->
         <section>
           <section>
             <h2>Along comes the client...</h2>
